@@ -145,6 +145,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "pep"
+    }
+  },
+  "defaultProject": "pep",
+  "cli": {
+    "analytics": "bc119933-448c-454a-952c-5583daee5404"
+  }
 }
