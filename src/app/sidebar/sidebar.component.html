@@ -1,1 +1,104 @@
-<p>sidebar works!</p>
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened="true" autosize fixedTopGap="56">
+    <div class="sidebar_menu" [@onSideNavChange]="statusSidebar">
+      <mat-nav-list class="menu-list">
+        <a
+          mat-list-item
+          routerLinkActive="active-list-item"
+          routerLink="login"
+          title="Login"
+        >
+          <mat-icon class="icon" [@iconAnimation]="statusSidebar"
+            >input</mat-icon
+          >
+          <span class="label" [@labelAnimation]="statusSidebar">Login</span>
+        </a>
+        <mat-divider></mat-divider>
+
+        <a
+          mat-list-item
+          routerLinkActive="active-list-item"
+          routerLink="alergia"
+          title="Alergia"
+        >
+          <mat-icon class="icon" [@iconAnimation]="statusSidebar"
+            >dashboard</mat-icon
+          >
+          <span class="label" [@labelAnimation]="statusSidebar">Alergia</span>
+        </a>
+
+        <a
+          mat-list-item
+          routerLinkActive="active-list-item"
+          routerLink="prescricao"
+          title="Prescricao"
+        >
+          <mat-icon class="icon" [@iconAnimation]="statusSidebar"
+            >dashboard</mat-icon
+          >
+          <span class="label" [@labelAnimation]="statusSidebar"
+            >Prescrição</span
+          >
+        </a>
+
+        <a
+          mat-list-item
+          routerLinkActive="active-list-item"
+          routerLink="encaminhamento"
+          title="Encaminhamento"
+        >
+          <mat-icon class="icon" [@iconAnimation]="statusSidebar"
+            >dashboard</mat-icon
+          >
+          <span class="label" [@labelAnimation]="statusSidebar"
+            >Encaminhamento</span
+          >
+        </a>
+
+        <a
+          mat-list-item
+          routerLinkActive="active-list-item"
+          routerLink="soap"
+          title="SOAP"
+        >
+          <mat-icon class="icon" [@iconAnimation]="statusSidebar"
+            >dashboard</mat-icon
+          >
+          <span class="label" [@labelAnimation]="statusSidebar">SOAP</span>
+        </a>
+
+        <a
+          mat-list-item
+          routerLinkActive="active-list-item"
+          routerLink="resumo-familia"
+          title="ResumoFamila"
+        >
+          <mat-icon class="icon" [@iconAnimation]="statusSidebar"
+            >dashboard</mat-icon
+          >
+          <span class="label" [@labelAnimation]="statusSidebar"
+            >Resumo da Família</span
+          >
+        </a>
+      </mat-nav-list>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content [@onSideNavChange]="statusSidebar">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- <div>
+  <router-outlet></router-outlet>
+</div> -->
+
+<!-- Aferição
+        Alergia
+        Prescrição
+        Encaminhamento
+        SOAP
+        Questionário
+        Resumo da Família
+        Exames
+        Vacinas -->

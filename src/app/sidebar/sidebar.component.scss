@@ -1,0 +1,33 @@
+:host {
+  height: 100%;
+}
+
+mat-sidenav-container {
+  height: 100%;
+}
+
+.sidebar_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 !important;
+
+  .menu-list {
+    flex: 1;
+    justify-content: normal;
+  }
+
+  .icon {
+    padding: 0 10px 0 0;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .label {
+    margin: 0;
+  }
+
+  .active-list-item {
+    color: #00695c !important;
+  }
+}

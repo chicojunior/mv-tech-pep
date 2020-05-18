@@ -1,1 +1,17 @@
-<mat-toolbar color="primary">PEP</mat-toolbar>
+<mat-toolbar color="primary">
+  <div class="container">
+    <div class="toggle">
+      <button mat-icon-button (click)="toggleSideNav()">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <div>PEP</div>
+    </div>
+
+    <div>
+      <app-usuario></app-usuario>
+    </div>
+
+    <div>actions</div>
+  </div>
+</mat-toolbar>

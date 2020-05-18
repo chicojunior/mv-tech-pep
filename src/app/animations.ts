@@ -10,9 +10,9 @@ import {
   animateChild,
 } from '@angular/animations';
 
-const defaultDuration = '100ms';
+const defaultDuration = '120ms';
 const defaultMinWidth = '50px';
-const defaultMaxWidth = '200px';
+const defaultMaxWidth = '2em';
 const defaultMinFontSize = '20px';
 const defaultMaxFontSize = '24px';
 
@@ -23,7 +23,7 @@ export function mainContentAnimation(
 ): AnimationTriggerMetadata {
   return trigger('onSideNavChange', [
     state(
-      'close',
+      'closed',
       style({
         'margin-left': minWidth,
       })
@@ -34,8 +34,8 @@ export function mainContentAnimation(
         'margin-left': maxWidth,
       })
     ),
-    transition('close => open', animate(`${animationDuration} ease-in`)),
-    transition('open => close', animate(`${animationDuration} ease-out`)),
+    transition('closed => open', animate(`${animationDuration} ease-in`)),
+    transition('open => closed', animate(`${animationDuration} ease-out`)),
   ]);
 }
 
@@ -46,7 +46,7 @@ export function sidebarAnimation(
 ): AnimationTriggerMetadata {
   return trigger('onSideNavChange', [
     state(
-      'close',
+      'closed',
       style({
         width: minWidth,
       })
@@ -58,7 +58,7 @@ export function sidebarAnimation(
       })
     ),
     transition(
-      'close => open',
+      'closed => open',
       group([
         query('@iconAnimation', animateChild()),
         query('@labelAnimation', animateChild()),
@@ -66,7 +66,7 @@ export function sidebarAnimation(
       ])
     ),
     transition(
-      'open => close',
+      'open => closed',
       group([
         query('@iconAnimation', animateChild()),
         query('@labelAnimation', animateChild()),
@@ -89,13 +89,13 @@ export function iconAnimation(
       })
     ),
     state(
-      'close',
+      'closed',
       style({
         fontSize: minFontSize,
       })
     ),
-    transition('close => open', animate(`${animationDuration} ease-in-out`)),
-    transition('open => close', animate(`${animationDuration} ease-in-out`)),
+    transition('closed => open', animate(`${animationDuration} ease-in-out`)),
+    transition('open => closed', animate(`${animationDuration} ease-in-out`)),
   ]);
 }
 
@@ -111,13 +111,13 @@ export function labelAnimation(
       })
     ),
     state(
-      'close',
+      'closed',
       style({
         display: 'none',
         opacity: 0,
       })
     ),
-    transition('close => open', animate(`${animationDuration} ease-in-out`)),
-    transition('open => close', animate(`${animationDuration} ease-in-out`)),
+    transition('closed => open', animate(`${animationDuration} ease-in-out`)),
+    transition('open => closed', animate(`${animationDuration} ease-in-out`)),
   ]);
 }

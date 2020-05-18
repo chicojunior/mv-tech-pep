@@ -14,7 +14,7 @@ export class SidebarService {
   }
 
   sidebarToggle() {
-    this.sidebarState = this.sidebarState === 'open' ? 'close' : 'open';
+    this.sidebarState = this.sidebarState === 'open' ? 'closed' : 'open';
     this.sidebarBehaviourSubject.next(this.sidebarState);
   }
 }

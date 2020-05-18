@@ -1,0 +1,20 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.container {
+  margin: 0 26px;
+  width: 100%;
+  justify-content: space-between;
+
+  @include flex-center();
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+
+  @include flex-center();
+}
