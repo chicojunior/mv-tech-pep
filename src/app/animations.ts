@@ -12,7 +12,7 @@ import {
 
 const defaultDuration = '120ms';
 const defaultMinWidth = '80px';
-const defaultMaxWidth = '210px';
+const defaultMaxWidth = '216px';
 const defaultMinFontSize = '20px';
 const defaultMaxFontSize = '24px';
 
