@@ -1,20 +1,7 @@
 <mat-sidenav-container>
-  <mat-sidenav mode="side" opened="true" autosize fixedTopGap="56">
+  <mat-sidenav mode="side" opened="true" autosize style="min-width: 60px;">
     <div class="sidebar_menu" [@onSideNavChange]="statusSidebar">
       <mat-nav-list class="menu-list">
-        <a
-          mat-list-item
-          routerLinkActive="active-list-item"
-          routerLink="login"
-          title="Login"
-        >
-          <mat-icon class="icon" [@iconAnimation]="statusSidebar"
-            >input</mat-icon
-          >
-          <span class="label" [@labelAnimation]="statusSidebar">Login</span>
-        </a>
-        <mat-divider></mat-divider>
-
         <a
           mat-list-item
           routerLinkActive="active-list-item"

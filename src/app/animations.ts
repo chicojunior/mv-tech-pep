@@ -11,8 +11,8 @@ import {
 } from '@angular/animations';
 
 const defaultDuration = '120ms';
-const defaultMinWidth = '50px';
-const defaultMaxWidth = '2em';
+const defaultMinWidth = '80px';
+const defaultMaxWidth = '210px';
 const defaultMinFontSize = '20px';
 const defaultMaxFontSize = '24px';
 
