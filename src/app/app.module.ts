@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { environment } from 'src/environments/environment';
+
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderModule } from './header/header.module';
 import { SidebarModule } from './sidebar/sidebar.module';

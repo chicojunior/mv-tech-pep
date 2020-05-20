@@ -1,0 +1,6 @@
+{
+  "hosting": {
+    "public": "dist/pep",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}

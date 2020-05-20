@@ -39,7 +39,79 @@
 
   <div class="soap__main">
     <div class="soap__cards">
-      cards
+      <div class="card__item">
+        <h1>S</h1>
+        <mat-card>
+          <mat-card-content>
+            <div style="display: flex;">
+              <form>
+                <mat-form-field appearance="outline" color="primary">
+                  <mat-label>CIAP</mat-label>
+                  <mat-select placeholder="Selecione um CIAP...">
+                    <mat-option
+                      *ngFor="let criticidade of criticidades"
+                      [value]="criticidade.valor"
+                    >
+                      {{ criticidade.view }}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="outline" color="primary">
+                  <mat-label>Notas</mat-label>
+                  <input
+                    matInput
+                    placeholder="Informe uma nota para o CIAP..."
+                  />
+                </mat-form-field>
+              </form>
+
+              <div style="display: flex; align-items: flex-end;">
+                <button mat-icon-button>
+                  <mat-icon>add</mat-icon>
+                </button>
+              </div>
+            </div>
+
+            <div>
+              lista de itens
+            </div>
+
+            <div>
+              <mat-form-field appearance="outline" color="primary">
+                <mat-label>Motivo da Consulta</mat-label>
+                <textarea matInput></textarea>
+              </mat-form-field>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div class="card__item">
+        <h1>O</h1>
+        <mat-card>
+          <mat-card-content>
+            <p>test</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div class="card__item">
+        <h1>A</h1>
+        <mat-card>
+          <mat-card-content>
+            <p>test</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div class="card__item">
+        <h1>P</h1>
+        <mat-card>
+          <mat-card-content>
+            <p>test</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
     </div>
     <div class="soap__historico">
       <app-historico></app-historico>

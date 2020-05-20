@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "mv-tech-pep": {
+      "hosting": {
+        "pep": [
+          "mv-tech-pep"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mv-tech-pep"
+  }
+}

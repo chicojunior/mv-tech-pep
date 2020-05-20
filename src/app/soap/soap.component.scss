@@ -21,6 +21,7 @@
 
   &__cards {
     flex: 2;
+    padding: 20px;
   }
 
   &__historico {
@@ -30,6 +31,16 @@
   .icon {
     color: #000000;
     font-size: 26px;
+  }
+
+  .card__item {
+    margin-bottom: 16px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
   }
 }
 
