@@ -7,9 +7,13 @@
     />
   </div>
   <div class="paciente__dados">
-    <p class="nome-paciente">Nome Usuario</p>
+    <p class="nome-paciente">{{ pacienteMock.nome | uppercase }}</p>
     <p class="dados-paciente">
-      <small>dados usuario</small>
+      <small
+        >{{ pacienteMock.sexo | titlecase }}, {{ pacienteMock.idade }} anos,
+        {{ pacienteMock.convenio }}, {{ pacienteMock.especialidade }},
+        {{ pacienteMock.ala }}, {{ pacienteMock.local }}</small
+      >
     </p>
   </div>
 </div>
