@@ -1,7 +1,39 @@
 <div class="soap">
   <div class="soap__header">
-    header
+    <div class="info">
+      <h4><strong>SOAP</strong></h4>
+      <div>
+        <mat-form-field appearance="outline" color="primary">
+          <mat-label>Criticidade</mat-label>
+          <mat-select>
+            <mat-option
+              *ngFor="let criticidade of criticidades"
+              [value]="criticidade.valor"
+            >
+              {{ criticidade.view }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-checkbox color="primary">Gestante</mat-checkbox>
+      </div>
+    </div>
+    <div class="actions">
+      <ul class="icon-list">
+        <li class="icon-list__item">
+          <a href=""><mat-icon class="icon">save</mat-icon></a>
+        </li>
+
+        <li class="icon-list__item">
+          <a href=""><mat-icon class="icon">print</mat-icon></a>
+        </li>
+
+        <li class="icon-list__item">
+          <a href=""><mat-icon class="icon">history</mat-icon></a>
+        </li>
+      </ul>
+    </div>
   </div>
+
   <div class="soap__main">
     <div class="soap__cards">
       cards

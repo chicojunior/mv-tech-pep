@@ -19,22 +19,6 @@
   @include flex-center();
 }
 
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  li {
-    margin-right: 12px;
-  }
-}
-
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
 .icon {
   color: #ffffff;
   font-size: 26px;

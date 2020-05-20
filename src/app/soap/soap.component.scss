@@ -1,7 +1,18 @@
 .soap {
   display: flex;
-  margin: 0 20px;
   flex-direction: column;
+
+  &__header {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    justify-content: space-between;
+
+    ul {
+      margin: 0;
+    }
+  }
 
   &__main {
     display: flex;
@@ -14,5 +25,23 @@
 
   &__hisorico {
     flex: 1;
+  }
+
+  .icon {
+    color: #000000;
+    font-size: 26px;
+  }
+}
+
+:host ::ng-deep {
+  // overrides
+
+  mat-form-field {
+    margin-right: 16px;
+    min-width: 300px;
+  }
+
+  .mat-form-field-wrapper {
+    padding-bottom: 0 !important;
   }
 }
