@@ -9,7 +9,7 @@
           title="Alergia"
         >
           <mat-icon class="icon" [@iconAnimation]="statusSidebar"
-            >dashboard</mat-icon
+            >healing</mat-icon
           >
           <span class="label" [@labelAnimation]="statusSidebar">Alergia</span>
         </a>
@@ -21,7 +21,7 @@
           title="Prescricao"
         >
           <mat-icon class="icon" [@iconAnimation]="statusSidebar"
-            >dashboard</mat-icon
+            >description</mat-icon
           >
           <span class="label" [@labelAnimation]="statusSidebar"
             >Prescrição</span
@@ -35,7 +35,7 @@
           title="Encaminhamento"
         >
           <mat-icon class="icon" [@iconAnimation]="statusSidebar"
-            >dashboard</mat-icon
+            >send</mat-icon
           >
           <span class="label" [@labelAnimation]="statusSidebar"
             >Encaminhamento</span
@@ -61,7 +61,7 @@
           title="ResumoFamila"
         >
           <mat-icon class="icon" [@iconAnimation]="statusSidebar"
-            >dashboard</mat-icon
+            >group</mat-icon
           >
           <span class="label" [@labelAnimation]="statusSidebar"
             >Resumo da Família</span
@@ -72,6 +72,7 @@
   </mat-sidenav>
 
   <mat-sidenav-content [@onSideNavChange]="statusSidebar">
+    <app-paciente></app-paciente>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

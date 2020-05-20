@@ -1,0 +1,21 @@
+.paciente {
+  background-color: #ffffff;
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+
+  &__avatar {
+    .avatar-usuario {
+      width: 45px;
+    }
+  }
+
+  &__dados {
+    margin-left: 16px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
