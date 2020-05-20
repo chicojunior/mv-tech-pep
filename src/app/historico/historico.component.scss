@@ -1,0 +1,32 @@
+.historico {
+  background-color: #ffffff;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .info {
+      text-align: center;
+    }
+
+    .title {
+      margin: 6px 0 0;
+      padding: 0;
+      font-weight: bold;
+    }
+  }
+
+  mat-panel-title {
+    font-weight: bold;
+  }
+}
+
+// overrides
+:host ::ng-deep {
+  .mat-expansion-panel {
+    border-top: 1px solid #ccc;
+    border-radius: 0 !important;
+    box-shadow: none;
+  }
+}
